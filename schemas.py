@@ -14,8 +14,11 @@ class EmployeeCreate(EmployeeBase):
     pass
 
 class EmployeeUpdate(EmployeeBase):
-    pass
-    #updated_at: datetime
+    full_name: Optional[str] = None
+    position: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    note: Optional[str] = None
 
 class Employee(EmployeeBase):
     id: int
@@ -36,8 +39,10 @@ class IncomingDocumentCreate(IncomingDocumentBase):
     pass
 
 class IncomingDocumentUpdate(IncomingDocumentBase):
-    pass
-    #updated_at: datetime
+    sender_id: Optional[int] = None
+    subject: Optional[str] = None
+    resolution: Optional[str] = None
+    note: Optional[str] = None
 
 class IncomingDocument(IncomingDocumentBase):
     id: int
@@ -58,8 +63,10 @@ class OutgoingDocumentCreate(OutgoingDocumentBase):
     pass
 
 class OutgoingDocumentUpdate(OutgoingDocumentBase):
-    pass
-    #updated_at: datetime
+    recipient_id: Optional[int] = None
+    subject: Optional[str] = None
+    delivery_method: Optional[str] = None
+    note: Optional[str] = None
 
 class OutgoingDocument(OutgoingDocumentBase):
     id: int
@@ -79,8 +86,9 @@ class MemoCreate(MemoBase):
     pass
 
 class MemoUpdate(MemoBase):
-    pass
-    #updated_at: datetime
+    author_id: Optional[int] = None
+    content: Optional[str] = None
+    note: Optional[str] = None
 
 class Memo(MemoBase):
     id: int
@@ -100,8 +108,8 @@ class ReportCreate(ReportBase):
     pass
 
 class ReportUpdate(ReportBase):
-    pass
-    #updated_at: datetime
+    author_id: Optional[int] = None
+    note: Optional[str] = None
 
 class Report(ReportBase):
     id: int
@@ -122,8 +130,9 @@ class OrderCreate(OrderBase):
     pass
 
 class OrderUpdate(OrderBase):
-    pass
-    #updated_at: datetime
+    content: Optional[str] = None
+    signer_id: Optional[int] = None
+    note: Optional[str] = None
 
 class Order(OrderBase):
     id: int
