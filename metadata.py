@@ -4,7 +4,7 @@ tags_metadata = [
         "description": "Сотрудники организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
     {
@@ -12,7 +12,7 @@ tags_metadata = [
         "description": "Входящие документы организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
     {
@@ -20,7 +20,7 @@ tags_metadata = [
         "description": "Исходящие документы организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
     {
@@ -28,7 +28,7 @@ tags_metadata = [
         "description": "Служебные записки организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
     {
@@ -36,7 +36,7 @@ tags_metadata = [
         "description": "Отчеты сотрудников организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
     {
@@ -44,7 +44,7 @@ tags_metadata = [
         "description": "Приказы организации",
         "externalDocs": {
             "description": "Информация по запросам",
-            "url": "https://github.com/KinLab666",
+            "url": "https://github.com/KinLab666/Test_Program_5",
         },
     },
 
