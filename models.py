@@ -17,8 +17,8 @@ class Employee(Base):
     reports = relationship("Report", back_populates="author")
     orders = relationship("Order", back_populates="signer")
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
 class IncomingDocument(Base):
     __tablename__ = "incoming_documents"
@@ -29,8 +29,8 @@ class IncomingDocument(Base):
     resolution = Column(Text, nullable=True)
     note = Column(Text, nullable=True)
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
 class OutgoingDocument(Base):
     __tablename__ = "outgoing_documents"
@@ -41,8 +41,8 @@ class OutgoingDocument(Base):
     delivery_method = Column(Enum("email", "mail", name="delivery_method"), nullable=False)
     note = Column(Text, nullable=True)
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
 class Memo(Base):
     __tablename__ = "memos"
@@ -54,8 +54,8 @@ class Memo(Base):
 
     author = relationship("Employee", back_populates="memos")
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
 class Report(Base):
     __tablename__ = "reports"
@@ -66,8 +66,8 @@ class Report(Base):
 
     author = relationship("Employee", back_populates="reports")
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
 class Order(Base):
     __tablename__ = "orders"
@@ -79,5 +79,5 @@ class Order(Base):
 
     signer = relationship("Employee", back_populates="orders")
 
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
