@@ -13,6 +13,10 @@ class EmployeeBase(BaseModel):
 class EmployeeCreate(EmployeeBase):
     pass
 
+class EmployeeUpdate(EmployeeBase):
+    pass
+    #updated_at: datetime
+
 class Employee(EmployeeBase):
     id: int
     created_at: datetime
@@ -30,6 +34,10 @@ class IncomingDocumentBase(BaseModel):
 
 class IncomingDocumentCreate(IncomingDocumentBase):
     pass
+
+class IncomingDocumentUpdate(IncomingDocumentBase):
+    pass
+    #updated_at: datetime
 
 class IncomingDocument(IncomingDocumentBase):
     id: int
@@ -49,6 +57,10 @@ class OutgoingDocumentBase(BaseModel):
 class OutgoingDocumentCreate(OutgoingDocumentBase):
     pass
 
+class OutgoingDocumentUpdate(OutgoingDocumentBase):
+    pass
+    #updated_at: datetime
+
 class OutgoingDocument(OutgoingDocumentBase):
     id: int
     created_at: datetime
@@ -65,6 +77,10 @@ class MemoBase(BaseModel):
 
 class MemoCreate(MemoBase):
     pass
+
+class MemoUpdate(MemoBase):
+    pass
+    #updated_at: datetime
 
 class Memo(MemoBase):
     id: int
@@ -83,6 +99,10 @@ class ReportBase(BaseModel):
 class ReportCreate(ReportBase):
     pass
 
+class ReportUpdate(ReportBase):
+    pass
+    #updated_at: datetime
+
 class Report(ReportBase):
     id: int
     author: Employee
@@ -100,6 +120,10 @@ class OrderBase(BaseModel):
 
 class OrderCreate(OrderBase):
     pass
+
+class OrderUpdate(OrderBase):
+    pass
+    #updated_at: datetime
 
 class Order(OrderBase):
     id: int
